@@ -1,0 +1,9 @@
+C:\soft\globalshopping\GlobalShopping.Render\bin\Debug\netstandard2.0\GlobalShopping.Render.deps.json
+C:\soft\globalshopping\GlobalShopping.Render\bin\Debug\netstandard2.0\GlobalShopping.Render.dll
+C:\soft\globalshopping\GlobalShopping.Render\obj\Debug\netstandard2.0\GlobalShopping.Render.csproj.CoreCompileInputs.cache
+C:\soft\globalshopping\GlobalShopping.Render\obj\Debug\netstandard2.0\GlobalShopping.Render.AssemblyInfoInputs.cache
+C:\soft\globalshopping\GlobalShopping.Render\obj\Debug\netstandard2.0\GlobalShopping.Render.AssemblyInfo.cs
+C:\soft\globalshopping\GlobalShopping.Render\bin\Debug\netstandard2.0\GlobalShopping.Render.pdb
+C:\soft\globalshopping\GlobalShopping.Render\obj\Debug\netstandard2.0\GlobalShopping.Render.dll
+C:\soft\globalshopping\GlobalShopping.Render\obj\Debug\netstandard2.0\GlobalShopping.Render.pdb
+C:\soft\globalshopping\GlobalShopping.Render\obj\Debug\netstandard2.0\GlobalShopping.Render.csprojResolveAssemblyReference.cache

@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sites>
+  <!--淘宝 -->
+  <site name="taobao">
+    <!--区域代购 -->
+    <area>CN</area>
+    <!--站点名称 -->
+    <sitename>taobao</sitename>
+    <!--域名 -->
+    <domian>taobao.com</domian>
+    <!--卖家 -->
+    <vendorname><![CDATA[<input type=\"hidden\" name=\"seller_nickname\" value=\"(.*?)\" />]]></vendorname>
+    <vendorname><![CDATA[<p class=" odd ">卖　　家：(.*?) <a]]></vendorname>
+    <vendorname><![CDATA[<p class=" even ">卖　　家：(.*?) <a]]></vendorname>
+    <productname><![CDATA[<input type=\"hidden\" name=\"title\" value=\"(.*?)\" />]]></productname>
+    <productname><![CDATA[<title >(.*?) - 手机淘宝网 </title>]]></productname>
+    <!--商品价格-->
+    <unitprice><![CDATA[<input type=\"hidden\" name=\"current_price\" value= \"(.*?)\" />]]></unitprice>
+    <unitprice><![CDATA[<strong class="oran">(.*?)</strong>]]></unitprice>
+    <unitprice><![CDATA[<em class="promo-price">            ￥(.*?)                        <span class="coins">                                                                                                                </span>        </em>]]></unitprice>
+    <unitprice><![CDATA[<p class=" odd ">价　　格：<del class="gray">108.00</del>元</p>]]></unitprice>
+    <!--商品图片-->
+    <productimage><![CDATA[<img id=\"J_ImgBooth\" src=\"(.*?)\"(.*?) />]]></productimage>
+    <productimage><![CDATA[src="(.*?)" /></p><table]]></productimage>
+    <!--商品ID -->
+    <iid><![CDATA[[&?]id=([0-9]*[1-9][0-9]*)]]></iid>
+    <iid><![CDATA[/item/([0-9]*[1-9][0-9]*).htm?]]></iid>
+    <iid><![CDATA[[&?]itemid=([0-9]*[1-9][0-9]*)]]></iid>
+    <iid><![CDATA[item/en/([0-9]*[1-9][0-9]*)]]></iid>
+    <iid><![CDATA[mallstitemid=([0-9]*[1-9][0-9]*)/>]]></iid>
+    <iid><![CDATA[default_item_id=([0-9]*[1-9][0-9]*)]]></iid>
+    <iid><![CDATA[item_num_id=([0-9]*[1-9][0-9]*)]]></iid>
+    <iid><![CDATA[i([0-9]*[1-9][0-9]*).htm]]></iid>
+    <!--商品套餐id -->
+    <mealid><![CDATA[meal_id=([0-9]*[1-9][0-9]*)]]></mealid>
+    <!--商品套餐名称 -->
+    <mealname><![CDATA[\\<div class=\"detail-hd\"\\>\\<h3\\>(.*?)\\</h3\\>\\</div\\>]]></mealname>
+    <mealname><![CDATA[<h3>(.*?)</h3>]]></mealname>
+    <!--商品套餐价格 -->
+    <mealprice><![CDATA[<strong id=\"J_StrPrice\" >(.*?)</strong>]]></mealprice>
+    <!--商品套餐图片 -->
+    <mealimage><![CDATA[<img id=\"J_ImgBooth\" data-hasZoom=\"700\" src=\"(.*?)\"  />]]></mealimage>
+
+    <!--卖家昵称 -->
+    <sellernick><![CDATA[<a class=\"hCard fn\" href=\"(.*?)\">(.*?)</a>]]></sellernick>
+    <sellernick><![CDATA[<h3 class=\"shop-title\"><a target=\"_blank\" href=\"(.*?)\">(.*?)</a></h3>]]></sellernick>
+
+    <!--店铺宝贝商品数量 -->
+    <accountcount><![CDATA[<p class=\"auction-count\"><span>共(.*?)件宝贝</span></p>]]></accountcount>
+  </site>
+  <!--女人我最大 -->
+  <site name="payeasy">
+    <area>TW</area>
+    <sitename>payeasy</sitename>
+    <domian>payeasy.com.tw</domian>
+    <vendorname>女人我最大</vendorname>
+    <productname>
+      <![CDATA[<font color=\"#FF0099\">(.*?)</font>]]>
+    </productname>
+    <productname>
+      <![CDATA[<title>(.*?)</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<strong><font color=red size=\"5\">(.*?)</font></strong>]]>
+    </unitprice>
+    <unitprice>
+      <![CDATA[{"pidSvalue":"(.*?)",  "itemStatus":]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img id="browseHistoryImg" title="(.*?)" onerror="this.src='/HappyS/notExist.jpg'" src="(.*?)" width="250" height="250"/>]]>
+    </productimage>
+    <productimage>
+      <![CDATA[<meta property="og:(.*?)" content="(.*?)"/>]]>
+    </productimage>
+  </site>
+  <!--富邦購物網 -->
+  <site name="momoshop">
+    <area>TW</area>
+    <sitename>momoshop</sitename>
+    <domian>momoshop.com.tw</domian>
+    <vendorname>富邦購物網</vendorname>
+    <productname>
+      <![CDATA[></a><p>(.*?)</p><span>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<input type="hidden" name="sale_price" value="(.*?)"/>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img class="jqzoom" name="l_img" src="(.*?)" width="320" height="320" />]]>
+    </productimage>
+  </site>
+  <!--愛慕可 -->
+  <site name="naruko">
+    <area>TW</area>
+    <sitename>naruko</sitename>
+    <domian>naruko.com.tw</domian>
+    <vendorname>愛慕可</vendorname>
+    <productname>
+      <![CDATA[<div class="pd_promo">(.*?)</div>]]>
+    </productname>
+    <productname>
+      <![CDATA[<title> (.*?) - NARUKO 愛慕可官方商城</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class=" mondy01">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img id="photo0" src="(.*?)" width="320" height="320" alt="(.*?)" />]]>
+    </productimage>
+  </site>
+  <!--美集合 -->
+  <site name="bgo">
+    <area>TW</area>
+    <sitename>bgo</sitename>
+    <domian>bgo.com.tw</domian>
+    <vendorname>美集合</vendorname>
+    <productname>
+      <![CDATA[<div class="title"><h1>(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<p class="mark">會員價<span class="red">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<div class="_l"><img src="(.*?)"><div class="share">]]>
+    </productimage>
+  </site>
+  <!--美人网 -->
+  <site name="pgmall">
+    <area>TW</area>
+    <sitename>pgmall</sitename>
+    <domian>pgmall.com.tw</domian>
+    <vendorname>美人网</vendorname>
+    <productname>
+      <![CDATA[<img id="goods_smallimg" style="border:#cccccc 1px solid; " width="350" height="350" alt="(.*?)" name="simage" border="1" id="simage" />]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="goodsPrice" id="ECS_SHOPPRICE">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[]]>
+    </productimage>
+  </site>
+  <!--东京着衣 -->
+  <site name="mayuki">
+    <area>TW</area>
+    <sitename>mayuki</sitename>
+    <domian>mayuki.com.tw</domian>
+    <vendorname>东京着衣</vendorname>
+    <productname>
+      <![CDATA[<meta property="og:title" content="(.*?)" />]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<font id="FontpmPriceSell" class="vt7p">\$(.*?)</font>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<span class="clsProductMainProduct"><img  src="(.*?)" border]]>
+    </productimage>
+  </site>
+  <!--樂天市場購物網 -->
+  <site name="rakuten">
+    <area>TW</area>
+    <sitename>rakuten</sitename>
+    <domian>rakuten.com.tw</domian>
+    <vendorname>樂天市場購物網</vendorname>
+    <productname>
+      <![CDATA[<h1 class="b-ttl-main" ng-non-bindable>(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[售價</font>      <span style=\"margin-right:0\" id='myprice'>(.*?)</span>元</strong>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<meta property="og:image" content="(.*?)" />]]>
+    </productimage>
+  </site>
+  <!--Yahoo!奇摩購物中心 -->
+  <site name="buy.yahoo">
+    <area>TW</area>
+    <sitename>buy.yahoo</sitename>
+    <domian>buy.yahoo.com.tw</domian>
+    <vendorname>Yahoo!奇摩購物中心</vendorname>
+    <productname>
+      <![CDATA[<title>(.*?) - Yahoo!奇摩購物中心</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span id="TOTAL_Price_CARD" class="Price" itemprop="price">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<meta itemprop="image" content="(.*?)">]]>
+    </productimage>
+  </site>
+  <!--Yahoo! 奇摩拍賣 -->
+  <site name="bid.yahoo">
+    <area>TW</area>
+    <sitename>bid.yahoo</sitename>
+    <domian>bid.yahoo.com</domian>
+    <vendorname>Yahoo! 奇摩拍賣</vendorname>
+    <productname>
+      <![CDATA[<h1><span itemprop="name">(.*?)</span></h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<li class='buy'><span>直接購買價：</span>(.*?) 元</li>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<table class=\"img\">               <tr>                 <td><IMG itemprop=\"image\" SRC=\"(.*?)\" width=85 border=0 ></td>               </tr>             </table>   ]]>
+    </productimage>
+  </site>
+  <!--Yahoo! 超级商城 -->
+  <site name="mall.yahoo">
+    <area>TW</area>
+    <sitename>mall.yahoo</sitename>
+    <domian>mall.yahoo.com</domian>
+    <vendorname>Yahoo! 超级商城</vendorname>
+    <productname>
+      <![CDATA[<title>(.*?) - Yahoo!奇摩超級商城</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span itemprop="price" class="price">(.*?)元</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<table><tbody><tr><td><img alt="(.*?)" src="(.*?)" width=(.*?) height=(.*?) itemprop="image"></td></tr></tbody></table>]]>
+    </productimage>
+  </site>
+  <!--東森購物網 -->
+  <site name="etmall">
+    <area>TW</area>
+    <sitename>etmall</sitename>
+    <domian>etmall.com.tw</domian>
+    <vendorname>東森購物網</vendorname>
+    <productname>
+      <![CDATA[<meta name="WT.pn" content="(.*?)">]]>
+    </productname>
+    <unitprice>
+      <![CDATA[var PRC="(.*?)";]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[]]>
+    </productimage>
+  </site>
+  <!--全买网 -->
+  <site name="obuy">
+    <area>TW</area>
+    <sitename>obuy</sitename>
+    <domian>obuy.tw</domian>
+    <vendorname>全买网</vendorname>
+    <productname>
+      <![CDATA[<title>(.*?) - (.*?)</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<tr><td bgcolor=f7f7f7><font size=2 color=red>現在特價：NT(.*?) 元</font></td></tr>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[]]>
+    </productimage>
+  </site>
+  <!--大買家 -->
+  <site name="savesafe">
+    <area>TW</area>
+    <sitename>savesafe</sitename>
+    <domian>savesafe.com.tw</domian>
+    <vendorname>大買家</vendorname>
+    <productname>
+      <![CDATA[<title>大買家-(.*?)</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="PG_totalprice">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder2_FormView1_imgPrdImg" src="(.*?)" alt="(.*?)" style="border-width:0px;" />]]>
+    </productimage>
+  </site>
+  <!--森森购物网 -->
+  <site name="u-mall">
+    <area>TW</area>
+    <sitename>u-mall</sitename>
+    <domian>u-mall.com.tw</domian>
+    <vendorname>森森购物网</vendorname>
+    <productname>
+      <![CDATA[<title>(.*?) 森森購物網</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA["SPrice": H "(.*?)" H,]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[]]>
+    </productimage>
+  </site>
+  <!--云端超商 -->
+  <site name="net7">
+    <area>TW</area>
+    <sitename>net7</sitename>
+    <domian>7net.com.tw</domian>
+    <vendorname>云端超商</vendorname>
+    <productname>
+      <![CDATA[<title>7net-(.*?)</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<b id="cPrice_right">(.*?)</b>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img class="act" src="(.*?)" alt="(.*?)"/>]]>
+    </productimage>
+  </site>
+  <!--商店街 -->
+  <site name="pcstore">
+    <area>TW</area>
+    <sitename>pcstore</sitename>
+    <domian>pcstore.com.tw</domian>
+    <vendorname><![CDATA[<title>PChome Online 商店街 - (.*?) - (.*?)</title>]]></vendorname>
+    <productname>
+      <![CDATA[<title>PChome Online 商店街 - (.*?) - (.*?)</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span style="font:18px Arial;color:#FF0000;">(.*?)</span><span class="t13"> 元 </span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img src="(.*?)" name="b_img_t" width="270" height="270" new_src="(.*?)">]]>
+    </productimage>
+  </site>
+  <!--娃娃童装 -->
+  <site name="baby-beauty">
+    <area>TW</area>
+    <sitename>baby-beauty</sitename>
+    <domian>baby-beauty.com</domian>
+    <vendorname><![CDATA[<title>娃娃童装</title>]]></vendorname>
+    <productname>
+      <![CDATA[<td class="ts06a">(.*?)</td>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span id="ctl00_cph1_dv_pif_lb_tl4" style="font-size:16px;">NT\$(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[ <img id="cph1_img_photo" src="(.*?)" style="width:350px;" />]]>
+    </productimage>
+  </site>
+  <!--勻伶流行館 -->
+  <site name="yarnling">
+    <area>TW</area>
+    <sitename>yarnling</sitename>
+    <domian>yarnling.com.tw</domian>
+    <vendorname><![CDATA[<title>勻伶流行館</title>]]></vendorname>
+    <productname>
+      <![CDATA[<font color="#FF0066">(.*?)</font>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<p>售價：(.*?)元(.*?)</p>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<td width="200" valign="top"><img border="0" src="(.*?)" width="200">]]>
+    </productimage>
+    <!--勻伶流行館 -->
+  </site>
+  <site name="gigade100">
+    <area>TW</area>
+    <sitename>gigade100</sitename>
+    <domian>gigade100.com</domian>
+    <vendorname><![CDATA[吉甲地。在地好物市集]]></vendorname>
+    <productname>
+      <![CDATA[<div id="productname"><h1>(.*?)<span id="spec_name"></span></h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<input type="hidden"name="product_price_list" id="product_price_list"value="(.*?)" />]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<div id="productpic"><img src="(.*?)" width="(.*?)"height="(.*?)" id="product_image" />]]>
+    </productimage>
+  </site>
+  <site name="forever21">
+    <area>US</area>
+    <sitename>forever21</sitename>
+    <domian>forever21.com</domian>
+    <vendorname><![CDATA[FOREVER 21]]></vendorname>
+    <productname>
+      <![CDATA[<h1 class="product-title">(.*?)</h1>]]>
+    </productname>
+	<productname>
+	  <![CDATA[<meta name="Description" content="Product Name:(.*?), Category:(.*?), Price:(.*?)" />]]>
+	</productname>
+    <unitprice>
+      <![CDATA[<p class="product-price">(.*?)</p>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img onerror='(.*?)' src='(.*?)'>]]>
+    </productimage>
+  </site>
+  <site name="gap">
+    <area>US</area>
+    <sitename>gap</sitename>
+    <domian>gap.com</domian>
+    <vendorname><![CDATA[gap]]></vendorname>
+    <productname>
+      <![CDATA[<img alt='Main product image: (.*?)'          id="product_image"          src='(.*?)'        />]]>
+    </productname>
+    <unitprice>
+      <![CDATA[- (\$[0-9]+(.[0-9]+)?) <br />]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img alt='(.*?)'          id="product_image"          src='(.*?)'        />]]>
+    </productimage>
+  </site>
+  <site name="coach">
+    <area>US</area>
+    <sitename>coach</sitename>
+    <domian>coach.com</domian>
+    <vendorname><![CDATA[coach]]></vendorname>
+    <productname>
+      <![CDATA[<h1 itemprop="name">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="pdTabProductPrice" id="pdTabProductPriceSpan"  >(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img  class="pdSwatch" id="(.*?)" style="cursor: pointer;" src="(.*?)" />]]>
+    </productimage>
+  </site>
+  <site name="victoriassecret">
+    <area>US</area>
+    <sitename>victoriassecret</sitename>
+    <domian>victoriassecret.com</domian>
+    <vendorname><![CDATA[Victoria's Secret]]></vendorname>
+    <productname>
+      <![CDATA[<hgroup itemprop="name">(.*?)</hgroup>]]>
+    </productname>
+	<unitprice>
+	  <![CDATA[<em> Sale (.*?)</em>]]>
+	</unitprice>
+	<unitprice>
+	  <![CDATA[<div class="price"> <p>(.*?) - (.*?) <br/>]]>
+	</unitprice>
+    <unitprice>
+      <![CDATA[<div class="price"> <p>(.*?)<br/>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<li class="selected"> <img alt="(.*?)" src="(.*?)"/>]]>
+    </productimage>
+  </site>
+  <site name="ralphlauren">
+    <area>US</area>
+    <sitename>ralphlauren</sitename>
+    <domian>ralphlauren.com</domian>
+    <vendorname><![CDATA[RALPH LAUREN]]></vendorname>
+    <productname>
+      <![CDATA[<div class="prodtitleLG"><h1>(.*?)</h1></div>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="prodourprice">Price:(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[main:(.*?), zoom:]]>
+    </productimage>
+  </site>
+  <site name="us.levi">
+    <area>US</area>
+    <sitename>us.levi</sitename>
+    <domian>us.levi.com</domian>
+    <vendorname><![CDATA[LEVI'S]]></vendorname>
+    <productname>
+      <![CDATA[<h1 class="product_title">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<div class="prod_total_price final_price">(.*?)</div>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA["thumbnail":"(.*?)","main"]]>
+    </productimage>
+  </site>
+  <site name="oldnavy">
+    <area>US</area>
+    <sitename>oldnavy</sitename>
+    <domian>oldnavy.gap.com</domian>
+    <vendorname><![CDATA[OLD NAVY]]></vendorname>
+    <productname>
+      <![CDATA[<img alt='Main product image:(.*?)'          id="product_image"          src='(.*?)'        /> ]]>
+    </productname>
+    <unitprice>
+      <![CDATA[- (\$[0-9]+(.[0-9]+)?) <br />]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img alt='Main product image:(.*?)'          id="product_image"          src='(.*?)'        /> ]]>
+    </productimage>
+  </site>
+  <site name="carters">
+    <area>US</area>
+    <sitename>carters</sitename>
+    <domian>carters.com</domian>
+    <vendorname><![CDATA[carter's]]></vendorname>
+    <productname>
+      <![CDATA[<h1 class="product-name" itemprop="name">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span itemprop="price" class="price-sales">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img itemprop="image" class="primary-image" src="(.*?)" alt="(.*?)" title="(.*?)"/>]]>
+    </productimage>
+  </site>
+  <site name="timberland">
+    <area>US</area>
+    <sitename>timberland</sitename>
+    <domian>shop.timberland.com</domian>
+    <vendorname><![CDATA[Timberland]]></vendorname>
+    <productname>
+      <![CDATA[<h1 class="product-title product-detail-title" itemprop="name">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="amount">                        Now (.*?)</span>]]>
+    </unitprice>
+    <unitprice>
+      <![CDATA[<span class="wasprice" itemprop="price">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[thumbnailImageURL: "(.*?)",]]>
+    </productimage>
+  </site>
+  <site name="toysrus">
+    <area>US</area>
+    <sitename>toysrus</sitename>
+    <domian>toysrus.com</domian>
+    <vendorname><![CDATA[TOYSRUS]]></vendorname>
+    <productname>
+      <![CDATA[<div id="lTitle"><h1>(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[Price:(.*?)">]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[swapImage\('(.*?)']]>
+    </productimage>
+  </site>
+  <site name="gnc">
+    <area>US</area>
+    <sitename>gnc</sitename>
+    <domian>gnc.com</domian>
+    <vendorname><![CDATA[GNC]]></vendorname>
+    <productname>
+      <![CDATA[<div class="productDescriptionBlock"><h2>(.*?)</h2> <small>(.*?)</small>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="priceNow"> Now (.*?)</span>]]>
+    </unitprice>
+    <unitprice>
+      <![CDATA[<span class="priceNow">Price:(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img id="mainProductImage" src="(.*?)" alt="(.*?)" title="(.*?)" /></a>]]>
+    </productimage>
+  </site>
+  <site name="drugstore">
+    <area>US</area>
+    <sitename>drugstore</sitename>
+    <domian>drugstore.com</domian>
+    <vendorname><![CDATA[drugstore]]></vendorname>
+    <productname>
+      <![CDATA[<H1 class="captionText">(.*?)<span]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<div id="productprice">our price:&nbsp;<b>(.*?)</b></div>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<div id="divPImage">(.*?)<img title="(.*?)" src="(.*?)"]]>
+    </productimage>
+  </site>
+  <site name="macys">
+    <area>US</area>
+    <sitename>macys</sitename>
+    <domian>macys.com</domian>
+    <vendorname><![CDATA[Macys]]></vendorname>
+    <productname>
+      <![CDATA[<h1 id="productTitle" class="productTitle" itemprop="name">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="priceSale">Sale(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img id="mainImage" src="(.*?)"]]>
+    </productimage>
+  </site>
+  <site name="asos">
+    <area>US</area>
+    <sitename>asos</sitename>
+    <domian>asos.com</domian>
+    <vendorname><![CDATA[ASOS]]></vendorname>
+    <productname>
+      <![CDATA[<h2 itemprop="name">(.*?)</h2>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="converted-amount">(.*?)</span></span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img itemprop="image" src="(.*?)"]]>
+    </productimage>
+  </site>
+  <site name="abercrombie">
+    <area>US</area>
+    <sitename>abercrombie</sitename>
+    <domian>abercrombie.com</domian>
+    <vendorname><![CDATA[A&F]]></vendorname>
+    <productname>
+      <![CDATA[<h1 class="name" itemprop="name">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<h4 class="offer-price">HK\$(.*?)</h4>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img mpdistrans="alt" class="prod-img" src="(.*?)"]]>
+    </productimage>
+  </site>
+  <site name="abercrombie">
+    <area>US</area>
+    <sitename>abercrombie</sitename>
+    <domian>abercrombie.com</domian>
+    <vendorname><![CDATA[A&F]]></vendorname>
+    <productname>
+      <![CDATA[<h1 class="name" itemprop="name">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<h4 class="offer-price">HK\$(.*?)</h4>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img mpdistrans="alt" class="prod-img" src="(.*?)"]]>
+    </productimage>
+  </site>
+  <site name="ae">
+    <area>US</area>
+    <sitename>ae</sitename>
+    <domian>ae.com</domian>
+    <vendorname><![CDATA[AmericanEagle]]></vendorname>
+    <productname>
+      <![CDATA[<h1 class="pName">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA["salePrice":(.*?),]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<img class="thumbNail" src="(.*?)"]]>
+    </productimage>
+  </site>
+  <site name="nastygal">
+    <area>US</area>
+    <sitename>nastygal</sitename>
+    <domian>nastygal.com</domian>
+    <vendorname><![CDATA[Nasty Gal]]></vendorname>
+    <productname>
+      <![CDATA[<meta property="og:title" content="(.*?)" /> ]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<meta property="eb:price" content="(.*?)" />]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<meta property="og:image" content="(.*?)" />]]>
+    </productimage>
+  </site>
+  <site name="1688">
+    <area>cn</area>
+    <sitename>1688</sitename>
+    <domian>1688.com</domian>
+    <vendorname><![CDATA[<span class="info ">(.*?)</span>]]></vendorname>
+    <productname>
+      <![CDATA[<h1 class="d-title">(.*?)</h1>]]>
+    </productname>
+    <unitprice>
+      <![CDATA['refPrice':'(.*?)']]>
+    </unitprice>
+    <unitprice>
+      <![CDATA[<span class="de-pnum-ep">(.*?)</span>]]>
+    </unitprice>
+    <unitprice>
+      <![CDATA[<span class="price">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[data-imgs='{"preview":"(.*?)"]]>
+    </productimage>
+    <shipmentfee>
+      <![CDATA[<p><span>快递</span><span class="fd-cny">(.*?)</span><em class="value">(.*?)</em></p>]]>
+    </shipmentfee>
+  </site>
+  <!--郵政商城 -->
+  <site name="postmall.com.tw">
+    <area>TW</area>
+    <sitename>postmall.com.tw</sitename>
+    <domian>postmall.com.tw</domian>
+	<vendorname><![CDATA[郵政商城]]></vendorname>
+    <productname>
+      <![CDATA[<title>(.*?)</title>]]>
+    </productname>
+    <unitprice>
+      <![CDATA[<span class="pp_number01">(.*?)</span>]]>
+    </unitprice>
+    <productimage>
+      <![CDATA[<td align="center"><img src="(.*?)" alt="(.*?)" /></td>]]>
+    </productimage>
+  </site>
+</sites>

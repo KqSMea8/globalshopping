@@ -1,0 +1,50 @@
+https://git.65dg.me/
+
+http://gitlab.1dmy.com:10080/ezbuy/web.git
+
+http://git.65dg.me/ezbuy/web.git
+qingwen.liao@ezbuy.com
+coody123
+
+1.kestrel-->api  done
+
+2.taobao api-->search data done
+
+
+3.dataaccess wrapper done
+
+4.product search page
+product detail page
+
+5.example
+
+
+
+vue.js+jquery+api-->renderPage
+
+v-if
+v-show
+v-else
+v-for="person in people"
+v-bind:class="activeNumber==1?'active':''"     ---->:class=""
+v-on:click="dosomething"------------>@click="dosomething"
+{{message}}
+new Vuew({
+	el:"#app",
+	data:{
+	
+	}
+})
+
+
+background razor  C#---->combine layout +page
+razor?
+
+5.product table 
+save data to database
+
+直接拷页面
+
+api获取数据
+
+layout+html-->razor

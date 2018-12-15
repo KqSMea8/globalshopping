@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="/_Admin/Script/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="/_Admin/Script/lib/vue.js"></script>
+    <script type="text/javascript" src="/_Admin/Script/EasyBuy.js"></script>
+   
+    <link rel="stylesheet" href="/_Admin/Style/test.css">
+</head>
+<body>
+    <div id="main">
+        <div>name:{{model.name}}</div>
+        <input type="text" v-model="inputData" @keyUp="keyUp" placeholder="input string in input,then div text will change."/>
+        <div>data from input:{{inputData}}</div>
+    </div>
+    
+</body>
+</html>
+<script type="text/javascript">
+    var model = {};
+    var getUrl = Easybuy.getUrl("test", "Get");
+
+    var num = Easybuy.getQueryString("num");
+    Easybuy.get(getUrl, { num: num }, function (res) {
+        if (res.Success) {
+            model = res.Model;
+        }
+        
+    });
+    
+    var vm = new Vue({
+        el: "#main",
+        data: {
+            model: model,
+            inputData:""
+        },
+        methods: {
+            keyUp: function () {
+                vm.model = {
+                    name: "change"
+                };
+            }
+        }
+        
+    });
+    vm.inputData = "test";
+    </script>

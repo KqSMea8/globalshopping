@@ -1,0 +1,13 @@
+C:\soft\globalshopping\GlobalShopping.Core\bin\Debug\netstandard2.0\GlobalShopping.Core.deps.json
+C:\soft\globalshopping\GlobalShopping.Core\bin\Debug\netstandard2.0\GlobalShopping.Core.dll
+C:\soft\globalshopping\GlobalShopping.Core\bin\Debug\netstandard2.0\TaobaoSDK.dll
+C:\soft\globalshopping\GlobalShopping.Core\bin\Debug\netstandard2.0\TopSdk.dll
+C:\soft\globalshopping\GlobalShopping.Core\bin\Debug\netstandard2.0\TaobaoSDK.pdb
+C:\soft\globalshopping\GlobalShopping.Core\bin\Debug\netstandard2.0\TopSdk.pdb
+C:\soft\globalshopping\GlobalShopping.Core\obj\Debug\netstandard2.0\GlobalShopping.Core.csprojResolveAssemblyReference.cache
+C:\soft\globalshopping\GlobalShopping.Core\obj\Debug\netstandard2.0\GlobalShopping.Core.csproj.CoreCompileInputs.cache
+C:\soft\globalshopping\GlobalShopping.Core\obj\Debug\netstandard2.0\GlobalShopping.Core.AssemblyInfoInputs.cache
+C:\soft\globalshopping\GlobalShopping.Core\obj\Debug\netstandard2.0\GlobalShopping.Core.AssemblyInfo.cs
+C:\soft\globalshopping\GlobalShopping.Core\bin\Debug\netstandard2.0\GlobalShopping.Core.pdb
+C:\soft\globalshopping\GlobalShopping.Core\obj\Debug\netstandard2.0\GlobalShopping.Core.dll
+C:\soft\globalshopping\GlobalShopping.Core\obj\Debug\netstandard2.0\GlobalShopping.Core.pdb

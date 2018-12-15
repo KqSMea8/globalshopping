@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Misc\CollectionHelper.cs" />
+    <Compile Remove="Misc\ConvertHelper.cs" />
+    <Compile Remove="Services\TaobaoManagerCopy.cs" />
+    <Compile Remove="Services\TaobaoServicesCopy.cs" />
+    <Compile Remove="Snatch\BaseSnatch.cs" />
+    <Compile Remove="Snatch\ISnatch.cs" />
+    <Compile Remove="Snatch\TaobaoSnatch.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdParty\TaobaoSDK\TaobaoSDK.csproj" />
+    <ProjectReference Include="..\ThirdParty\TopSdk\TopSdk.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Snatch\" />
+  </ItemGroup>
+
+</Project>

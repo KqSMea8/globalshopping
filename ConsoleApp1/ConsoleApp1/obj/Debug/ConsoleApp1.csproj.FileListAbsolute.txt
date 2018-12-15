@@ -1,0 +1,8 @@
+C:\soft\globalshopping\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+C:\soft\globalshopping\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\soft\globalshopping\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\soft\globalshopping\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\soft\globalshopping\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\soft\globalshopping\ConsoleApp1\ConsoleApp1\bin\Debug\TopSdk.dll
+C:\soft\globalshopping\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\soft\globalshopping\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

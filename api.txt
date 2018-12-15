@@ -1,0 +1,44 @@
+1.create api key
+topsdk,taobaosdk区别
+
+
+account is right
+正式环境不行，可以使用测试环境
+
+正式环境-->可能需要审核
+
+https://www.kancloud.cn/dahuariji/taodatui/421755 tbk参考
+
+http://open.taobao.com/ 官网
+
+api文档
+http://open.taobao.com/doc.htm?docId=101618&docType=1
+
+http://open.taobao.com/doc.htm?docId=107748&docType=1
+
+Top Taobao Open Platform
+
+
+25313721
+
+7baeb2a26918600d6e3a2fa3209c9211
+
+http://my.open.taobao.com/app/newSdkDownload.htm?spm=a219a.7395903.0.0.14513971lsuZDj&appId=7631997&appkey=25313721&appKey=25313721&app_id=7631997
+2.
+
+api：sandbox and 正式环境
+http://open.taobao.com/doc.htm?docId=108&docType=1
+
+
+所有文档
+http://open.taobao.com/api.htm?docId=10&docType=2#s3
+
+
+taobao.item.get
+http://open.taobao.com/doc.htm?spm=a219a.7386797.0.0.7b7d2cbfo7nQWs&source=search&docId=108909&docType=1
+
+
+https://item.taobao.com/item.htm?spm=a217h.9580640.831217.1.7dd925aaBWvHaU&id=16790041596&scm=
+1007.12144.81309.70043_0_0&pvid=9de295ac-f260-40c3-bea7-d8dd732565e0&utparam=%7B%22
+x_hestia_source%22%3A%2270043%22%2C%22x_object_type%22%3A%22item%22%2C%22x_mt%22%3A8%2C%22x_src%22%3A%2270043%22%2C%22x_pos%22%3A1%2C%22x_
+pvid%22%3A%229de295ac-f260-40c3-bea7-d8dd732565e0%22%2C%22x_object_id%22%3A16790041596%7D
